@@ -1,0 +1,16 @@
+com.vitorteixeira.android.tracker.MyPhoneReceiver
+com.vitorteixeira.android.tracker.MyPhoneReceiver: MyPhoneReceiver()
+com.vitorteixeira.android.tracker.R$dimen: int activity_horizontal_margin
+com.vitorteixeira.android.tracker.R$dimen: int activity_vertical_margin
+com.vitorteixeira.android.tracker.R$drawable: int ic_launcher
+com.vitorteixeira.android.tracker.R$id: int action_settings
+com.vitorteixeira.android.tracker.R$layout: int activity_main
+com.vitorteixeira.android.tracker.R$layout: int activity_tracker
+com.vitorteixeira.android.tracker.R$menu: int main
+com.vitorteixeira.android.tracker.R$menu: int tracker
+com.vitorteixeira.android.tracker.R$string: int action_settings
+com.vitorteixeira.android.tracker.R$string: int app_name
+com.vitorteixeira.android.tracker.R$string: int hello_world
+com.vitorteixeira.android.tracker.R$string: int title_activity_main
+com.vitorteixeira.android.tracker.R$style: int AppBaseTheme
+com.vitorteixeira.android.tracker.R$style: int AppTheme

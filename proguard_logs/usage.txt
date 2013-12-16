@@ -1,0 +1,14 @@
+com.vitorteixeira.android.tracker.BuildConfig
+com.vitorteixeira.android.tracker.MainActivity
+com.vitorteixeira.android.tracker.MyPhoneReceiver:
+    private static final java.lang.String TAG
+com.vitorteixeira.android.tracker.R
+com.vitorteixeira.android.tracker.R$attr
+com.vitorteixeira.android.tracker.R$dimen
+com.vitorteixeira.android.tracker.R$drawable
+com.vitorteixeira.android.tracker.R$id
+com.vitorteixeira.android.tracker.R$layout
+com.vitorteixeira.android.tracker.R$menu
+com.vitorteixeira.android.tracker.R$string
+com.vitorteixeira.android.tracker.R$style
+com.vitorteixeira.android.tracker.TrackerActivity

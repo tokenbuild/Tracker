@@ -1,0 +1,6 @@
+com.vitorteixeira.android.tracker.MyPhoneReceiver -> com.vitorteixeira.android.tracker.MyPhoneReceiver:
+    android.telephony.PhoneStateListener phoneStateListener -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.vitorteixeira.android.tracker.MyPhoneReceiver$1 -> com.vitorteixeira.android.tracker.a:
+    com.vitorteixeira.android.tracker.MyPhoneReceiver this$0 -> a
+    void onCallStateChanged(int,java.lang.String) -> onCallStateChanged

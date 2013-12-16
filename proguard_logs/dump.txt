@@ -1,0 +1,226 @@
+_____________________________________________________________________
++ Program class: com/vitorteixeira/android/tracker/MyPhoneReceiver
+  Superclass:    android/content/BroadcastReceiver
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.vitorteixeira.android.tracker.MyPhoneReceiver extends android.content.BroadcastReceiver
+
+Interfaces (count = 0):
+
+Constant Pool (count = 35):
+  + String [phone]
+  + Class [android/content/BroadcastReceiver]
+  + Class [android/content/Context]
+  + Class [android/telephony/TelephonyManager]
+  + Class [com/vitorteixeira/android/tracker/MyPhoneReceiver]
+  + Class [com/vitorteixeira/android/tracker/a]
+  + Fieldref [com/vitorteixeira/android/tracker/MyPhoneReceiver.a Landroid/telephony/PhoneStateListener;]
+  + Methodref [android/content/BroadcastReceiver.<init> ()V]
+  + Methodref [android/content/Context.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + Methodref [android/telephony/TelephonyManager.listen (Landroid/telephony/PhoneStateListener;I)V]
+  + Methodref [com/vitorteixeira/android/tracker/a.<init> (Lcom/vitorteixeira/android/tracker/MyPhoneReceiver;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Lcom/vitorteixeira/android/tracker/MyPhoneReceiver;)V]
+  + NameAndType [a Landroid/telephony/PhoneStateListener;]
+  + NameAndType [getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + NameAndType [listen (Landroid/telephony/PhoneStateListener;I)V]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/Context;Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/telephony/PhoneStateListener;I)V]
+  + Utf8 [(Lcom/vitorteixeira/android/tracker/MyPhoneReceiver;)V]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/Object;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/telephony/PhoneStateListener;]
+  + Utf8 [a]
+  + Utf8 [android/content/BroadcastReceiver]
+  + Utf8 [android/content/Context]
+  + Utf8 [android/telephony/TelephonyManager]
+  + Utf8 [com/vitorteixeira/android/tracker/MyPhoneReceiver]
+  + Utf8 [com/vitorteixeira/android/tracker/a]
+  + Utf8 [getSystemService]
+  + Utf8 [listen]
+  + Utf8 [onReceive]
+  + Utf8 [phone]
+
+Fields (count = 1):
+  + Field:        a Landroid/telephony/PhoneStateListener;
+    Access flags: 0x0
+      = android.telephony.PhoneStateListener a
+
+Methods (count = 2):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public MyPhoneReceiver()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 17, locals = 1, stack = 4):
+      [0] aload_0 v0
+      [1] invokespecial #8
+        + Methodref [android/content/BroadcastReceiver.<init> ()V]
+      [4] aload_0 v0
+      [5] new #6
+        + Class [com/vitorteixeira/android/tracker/a]
+      [8] dup
+      [9] aload_0 v0
+      [10] invokespecial #11
+        + Methodref [com/vitorteixeira/android/tracker/a.<init> (Lcom/vitorteixeira/android/tracker/MyPhoneReceiver;)V]
+      [13] putfield #7
+        + Fieldref [com/vitorteixeira/android/tracker/MyPhoneReceiver.a Landroid/telephony/PhoneStateListener;]
+      [16] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    Access flags: 0x1
+      = public void onReceive(android.content.Context,android.content.Intent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 21, locals = 4, stack = 3):
+      [0] aload_1 v1
+      [1] ldc #1
+        + String [phone]
+      [3] invokevirtual #9
+        + Methodref [android/content/Context.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+      [6] checkcast #4
+        + Class [android/telephony/TelephonyManager]
+      [9] astore_3 v3
+      [10] aload_3 v3
+      [11] aload_0 v0
+      [12] getfield #7
+        + Fieldref [com/vitorteixeira/android/tracker/MyPhoneReceiver.a Landroid/telephony/PhoneStateListener;]
+      [15] bipush 32
+      [17] invokevirtual #10
+        + Methodref [android/telephony/TelephonyManager.listen (Landroid/telephony/PhoneStateListener;I)V]
+      [20] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/vitorteixeira/android/tracker/a
+  Superclass:    android/telephony/PhoneStateListener
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.vitorteixeira.android.tracker.a extends android.telephony.PhoneStateListener
+
+Interfaces (count = 0):
+
+Constant Pool (count = 44):
+  + String [ ]
+  + String [MyPhoneReceiver]
+  + Class [android/telephony/PhoneStateListener]
+  + Class [android/util/Log]
+  + Class [com/vitorteixeira/android/tracker/a]
+  + Class [java/lang/StringBuilder]
+  + Fieldref [com/vitorteixeira/android/tracker/a.a Lcom/vitorteixeira/android/tracker/MyPhoneReceiver;]
+  + Methodref [android/telephony/PhoneStateListener.<init> ()V]
+  + Methodref [android/telephony/PhoneStateListener.onCallStateChanged (ILjava/lang/String;)V]
+  + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+  + Methodref [java/lang/StringBuilder.<init> ()V]
+  + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Lcom/vitorteixeira/android/tracker/MyPhoneReceiver;]
+  + NameAndType [append (I)Ljava/lang/StringBuilder;]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [i (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [onCallStateChanged (ILjava/lang/String;)V]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + Utf8 [ ]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(I)Ljava/lang/StringBuilder;]
+  + Utf8 [(ILjava/lang/String;)V]
+  + Utf8 [(Lcom/vitorteixeira/android/tracker/MyPhoneReceiver;)V]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/vitorteixeira/android/tracker/MyPhoneReceiver;]
+  + Utf8 [MyPhoneReceiver]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android/telephony/PhoneStateListener]
+  + Utf8 [android/util/Log]
+  + Utf8 [append]
+  + Utf8 [com/vitorteixeira/android/tracker/a]
+  + Utf8 [i]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [onCallStateChanged]
+  + Utf8 [toString]
+
+Fields (count = 1):
+  + Field:        a Lcom/vitorteixeira/android/tracker/MyPhoneReceiver;
+    Access flags: 0x1010
+      = final synthetic com.vitorteixeira.android.tracker.MyPhoneReceiver a
+
+Methods (count = 2):
+  - Method:       <init>(Lcom/vitorteixeira/android/tracker/MyPhoneReceiver;)V
+    Access flags: 0x0
+      = a(com.vitorteixeira.android.tracker.MyPhoneReceiver)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #7
+        + Fieldref [com/vitorteixeira/android/tracker/a.a Lcom/vitorteixeira/android/tracker/MyPhoneReceiver;]
+      [5] aload_0 v0
+      [6] invokespecial #8
+        + Methodref [android/telephony/PhoneStateListener.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCallStateChanged(ILjava/lang/String;)V
+    Access flags: 0x1
+      = public void onCallStateChanged(int,java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 56, locals = 3, stack = 3):
+      [0] iload_1 v1
+      [1] iconst_1
+      [2] ificmpne +6 (target=8)
+      [5] goto +15 (target=20)
+      [8] iload_1 v1
+      [9] ifne +6 (target=15)
+      [12] goto +8 (target=20)
+      [15] iload_1 v1
+      [16] iconst_2
+      [17] ificmpne +3 (target=20)
+      [20] ldc #2
+        + String [MyPhoneReceiver]
+      [22] new #6
+        + Class [java/lang/StringBuilder]
+      [25] dup
+      [26] invokespecial #11
+        + Methodref [java/lang/StringBuilder.<init> ()V]
+      [29] aload_2 v2
+      [30] invokevirtual #13
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [33] ldc #1
+        + String [ ]
+      [35] invokevirtual #13
+        + Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [38] iload_1 v1
+      [39] invokevirtual #12
+        + Methodref [java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;]
+      [42] invokevirtual #14
+        + Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [45] invokestatic #10
+        + Methodref [android/util/Log.i (Ljava/lang/String;Ljava/lang/String;)I]
+      [48] pop
+      [49] aload_0 v0
+      [50] iload_1 v1
+      [51] aload_2 v2
+      [52] invokespecial #9
+        + Methodref [android/telephony/PhoneStateListener.onCallStateChanged (ILjava/lang/String;)V]
+      [55] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [8] Var: ..., Stack: (empty)
+        - [15] Var: ..., Stack: (empty)
+        - [20] Var: ..., Stack: (empty)
+
+Class file attributes (count = 0):
+
