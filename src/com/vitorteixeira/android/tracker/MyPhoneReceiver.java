@@ -15,10 +15,11 @@ public class MyPhoneReceiver extends BroadcastReceiver {
 	    @Override
 	    public void onCallStateChanged(int state, String incomingNumber) {
 	        if (state == TelephonyManager.CALL_STATE_RINGING) {
-
+                Log.i(TAG, "Ligação começou");
 	        } else if(state == TelephonyManager.CALL_STATE_IDLE) {
-
+                Log.i(TAG, "Ligação recusada");
 	        } else if(state == TelephonyManager.CALL_STATE_OFFHOOK) {
+                Log.i(TAG, "Ligação terminou");
 	        }
         	Log.i(TAG, incomingNumber + " " + state);
 	        super.onCallStateChanged(state, incomingNumber);
@@ -30,6 +31,7 @@ public class MyPhoneReceiver extends BroadcastReceiver {
 		// TODO Auto-generated method stub
         TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
         telephonyManager.listen(this.phoneStateListener,PhoneStateListener.LISTEN_CALL_STATE);
+        telephonyManager.listen(this.phoneStateListener, PhoneStateListener.LISTEN_NONE);
 	}
 
 }
