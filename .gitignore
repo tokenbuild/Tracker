@@ -1,0 +1,6 @@
+.idea/
+Tracker.iml
+gen/
+out/
+proguard_logs/dump.txt
+projectFilesBackup/
