@@ -1,6 +1,16 @@
 com.vitorteixeira.android.tracker.MyPhoneReceiver -> com.vitorteixeira.android.tracker.MyPhoneReceiver:
+    com.vitorteixeira.android.tracker.helper.CallRecorder callRecorder -> b
     android.telephony.PhoneStateListener phoneStateListener -> a
     void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    com.vitorteixeira.android.tracker.helper.CallRecorder access$002(com.vitorteixeira.android.tracker.MyPhoneReceiver,com.vitorteixeira.android.tracker.helper.CallRecorder) -> a
+    com.vitorteixeira.android.tracker.helper.CallRecorder access$000(com.vitorteixeira.android.tracker.MyPhoneReceiver) -> a
 com.vitorteixeira.android.tracker.MyPhoneReceiver$1 -> com.vitorteixeira.android.tracker.a:
     com.vitorteixeira.android.tracker.MyPhoneReceiver this$0 -> a
     void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
+com.vitorteixeira.android.tracker.helper.CallRecorder -> com.vitorteixeira.android.tracker.a.a:
+    android.media.MediaRecorder recorder -> a
+    void rec() -> a
+    void stop() -> b
+    void saveCallStreamingToFile(java.lang.String) -> a
+    void checkAndCreatePath(java.lang.String) -> b
+    java.lang.String getPath() -> c

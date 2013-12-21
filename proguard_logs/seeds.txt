@@ -1,3 +1,15 @@
+com.crashlytics.android.C: com.crashlytics.android.C[] values()
+com.crashlytics.android.C: com.crashlytics.android.C valueOf(java.lang.String)
+com.crashlytics.android.aO: com.crashlytics.android.aO[] values()
+com.crashlytics.android.aO: com.crashlytics.android.aO valueOf(java.lang.String)
+com.crashlytics.android.aR: com.crashlytics.android.aR[] values()
+com.crashlytics.android.aR: com.crashlytics.android.aR valueOf(java.lang.String)
+com.crashlytics.android.ax: com.crashlytics.android.ax[] values()
+com.crashlytics.android.ax: com.crashlytics.android.ax valueOf(java.lang.String)
+com.crashlytics.android.bd: com.crashlytics.android.bd[] values()
+com.crashlytics.android.bd: com.crashlytics.android.bd valueOf(java.lang.String)
+com.crashlytics.android.internal.f: com.crashlytics.android.internal.f[] values()
+com.crashlytics.android.internal.f: com.crashlytics.android.internal.f valueOf(java.lang.String)
 com.vitorteixeira.android.tracker.MyPhoneReceiver
 com.vitorteixeira.android.tracker.MyPhoneReceiver: MyPhoneReceiver()
 com.vitorteixeira.android.tracker.R$dimen: int activity_horizontal_margin
@@ -10,6 +22,7 @@ com.vitorteixeira.android.tracker.R$menu: int main
 com.vitorteixeira.android.tracker.R$menu: int tracker
 com.vitorteixeira.android.tracker.R$string: int action_settings
 com.vitorteixeira.android.tracker.R$string: int app_name
+com.vitorteixeira.android.tracker.R$string: int com_crashlytics_android_build_id
 com.vitorteixeira.android.tracker.R$string: int hello_world
 com.vitorteixeira.android.tracker.R$string: int title_activity_main
 com.vitorteixeira.android.tracker.R$style: int AppBaseTheme
