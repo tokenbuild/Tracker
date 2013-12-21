@@ -3,11 +3,10 @@ package com.vitorteixeira.android.tracker;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.sax.StartElementListener;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.util.Log;
-import com.vitorteixeira.android.tracker.helper.CallRecorder;
+
 import com.vitorteixeira.android.tracker.service.CallRecorderService;
 //import com.crashlytics.android.Crashlytics;
 

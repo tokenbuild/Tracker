@@ -1,12 +1,11 @@
 package com.vitorteixeira.android.tracker.service;
 
-import com.vitorteixeira.android.tracker.helper.CallRecorder;
-
 import android.app.IntentService;
 import android.app.Service;
 import android.content.Intent;
-import android.media.MediaRecorder;
 import android.util.Log;
+
+import com.vitorteixeira.android.tracker.helper.CallRecorder;
 
 public class CallRecorderService extends IntentService {
 
