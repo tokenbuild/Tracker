@@ -2,5 +2,6 @@
 Tracker.iml
 gen/
 out/
+bin/
 proguard_logs/dump.txt
 projectFilesBackup/
