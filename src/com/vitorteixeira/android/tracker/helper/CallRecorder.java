@@ -23,6 +23,8 @@ public class CallRecorder {
     
     private int status;
     
+    private CallDirection direction;
+    
     public CallRecorder() {
     	this.phoneNumber = new String();
     	this.status = CallRecorder.INICIALIZED;
@@ -30,6 +32,10 @@ public class CallRecorder {
     
     public void setPhoneNumber(String phoneNumber) {
     	this.phoneNumber = phoneNumber;
+    }
+    
+    public void setCallDirection(CallDirection direction) {
+    	this.direction = direction;
     }
     
     public void prepare(){
@@ -49,8 +55,10 @@ public class CallRecorder {
     }
 
     private String getNewFileName() {
-    	Date date = new Date(java.lang.System.currentTimeMillis());    	
-    	return this.phoneNumber + "_" + DateFormat.format("yyyy_MM_d_hh_mm_ss", date).toString() +".3gp";
+    	Date date = new Date(java.lang.System.currentTimeMillis());
+    	String prefix = (this.direction == CallDirection.INCOMING) ? "i" : "o";
+ 
+    	return prefix + "_" + this.phoneNumber + "_" + DateFormat.format("yyyy_MM_d_hh_mm_ss", date).toString() +".3gp";
 	}
 
     public void start() {

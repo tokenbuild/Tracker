@@ -5,6 +5,7 @@ import android.app.Service;
 import android.content.Intent;
 import android.util.Log;
 
+import com.vitorteixeira.android.tracker.helper.CallDirection;
 import com.vitorteixeira.android.tracker.helper.CallRecorder;
 
 public class CallRecorderService extends IntentService {
@@ -12,7 +13,8 @@ public class CallRecorderService extends IntentService {
 	public static final int IDLE = 1;	
 	public static final int START = 2;	
 	public static final int STOP = 3;
-	private static final String TAG = "CallRecorderService";
+	
+	private static final String TAG = "CallRecorderService";		
 	
 	private CallRecorder callRecorder;
 	
@@ -23,7 +25,7 @@ public class CallRecorderService extends IntentService {
 	
 	@Override
 	public void onCreate() {
-		super.onCreate();
+		super.onCreate();		
 		Log.i(TAG, "onCreate");
 		this.callRecorder = new CallRecorder();
 	}
@@ -37,8 +39,6 @@ public class CallRecorderService extends IntentService {
 	public int onStartCommand(Intent intent, int flags, int startId) {
 		
 		int action = intent.getIntExtra("action", 0);
-		String phoneNumber = intent.getStringExtra("phoneNumber");
-		this.callRecorder.setPhoneNumber(phoneNumber);
 		
 		if (action == CallRecorderService.START) {
 			Log.i(TAG, "action START");
@@ -49,6 +49,8 @@ public class CallRecorderService extends IntentService {
 			this.stopSelf();
 		} else if (action == CallRecorderService.IDLE) {
 			Log.i(TAG, "action IDLE");
+			this.callRecorder.setPhoneNumber(intent.getStringExtra("phoneNumber"));			
+			this.callRecorder.setCallDirection(CallDirection.valueOf(intent.getStringExtra("direction")));			
 			this.callRecorder.prepare();
 		}
 		

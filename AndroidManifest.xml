@@ -33,7 +33,7 @@
         </activity>
         
         <receiver
-            android:name=".MyPhoneReceiver"
+            android:name="com.vitorteixeira.android.tracker.receiver.CallReceiver"
             android:enabled="true"
             android:exported="true" >
             <intent-filter>
@@ -42,7 +42,7 @@
             <intent-filter>
                 <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
             </intent-filter>
-        </receiver>
+        </receiver>      
         
         <service android:name=".service.CallRecorderService" />
         
