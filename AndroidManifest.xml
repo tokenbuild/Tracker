@@ -16,6 +16,8 @@
    	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
    	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />	
    	<uses-permission android:name="android.permission.STORAGE" />
+   	
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> 
     
 
     <application
@@ -42,11 +44,24 @@
             <intent-filter>
                 <action android:name="android.intent.action.NEW_OUTGOING_CALL" />
             </intent-filter>
-        </receiver>      
+        </receiver> 
+        
+        <receiver
+            android:name="com.vitorteixeira.android.tracker.receiver.BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.RECEIVE_BOOT_COMPLETE" />
+            </intent-filter>
+        </receiver>                       
         
         <service android:name=".service.CallRecorderService" />
         
         <meta-data android:name="com.crashlytics.ApiKey" android:value="9078017601ea21ddca86511a1251bcaf0fd624ce"/>
+        
+        <meta-data android:name="com.google.android.gms.version"
+           android:value="@integer/google_play_services_version" />
+        
     </application>
 
 </manifest>
